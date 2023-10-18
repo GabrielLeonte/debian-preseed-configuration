@@ -22,7 +22,7 @@ d-i mirror/http/proxy string
 
 ### Account setup
 # Skip creation of a root account
-d-i passwd/make-user boolean false
+d-i passwd/make-user boolean true
 
 # Root password, either in clear text
 d-i passwd/root-password password root
