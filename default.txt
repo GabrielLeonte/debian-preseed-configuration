@@ -28,11 +28,17 @@ d-i passwd/make-user boolean false
 d-i passwd/root-password password root
 d-i passwd/root-password-again password root
 
+# To create a normal user account.
+d-i passwd/user-fullname string gabriel
+d-i passwd/username string gabriel
+# Normal user's password, either in clear text
+d-i passwd/user-password password root
+d-i passwd/user-password-again password root
+
 ### Clock and time zone setup
 d-i clock-setup/utc boolean true
 d-i time/zone string US/Eastern
 d-i clock-setup/ntp boolean true
-
 
 ### Partitioning
 ## Partitioning example
